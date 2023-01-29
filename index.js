@@ -9,26 +9,22 @@ app.use('/recipes', require('./controllers/recipes'))
 //home page
 app.get('/', function (req, res) {
    
-    res.send(`
-    <body>
-    <h1>Hello world</h1>
-    </body>
-    `)
+    res.send('<h1>Home Page</h1>')
 })
 //recipes page
 app.get('/Recipes', function (req, res) {
    
-    res.send('Hello world')
+    res.send('<h1>Recipes</h1>')
 })
 //reviews page
 app.get('/Reviews', function (req, res) {
    
-    res.send('Hello world')
+    res.send('<h1>Reviews</h1>')
 })
 //about page
 app.get('/About', function (req, res) {
    
-    res.send('Hello world')
+    res.send('<h1>About Us</h1>')
 })
 //error page
 app.get('*', (req, res) => {
